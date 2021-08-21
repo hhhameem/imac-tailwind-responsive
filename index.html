@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>IMac</title>
+    </head>
+
+    <body>
+        <main class="w-10/12 mx-auto mt-8 flex flex-col text-gray-700 sm:flex-row w-3/4">
+            <!-- image section -->
+            <section class="sm:mr-8">
+                <img src="images/mac.png" alt="Macbook Image">
+            </section>
+            <!-- text section -->
+            <section class="mt-4 sm:mt-0">
+                <h6 class="font-bold text-4xl">Customize your Blue 24-inch iMac with Apple M1 chip</h6>
+                <p class="mt-4">Apple M1 chip with 8‑core CPU, 8‑core GPU, and 16‑core Neural Engine 8GB unified memory
+                    256GB SSD storage 13-inch Retina display with True Tone Backlit Magic
+                    Keyboard - US English Touch Bar and Touch ID Two Thunderbolt / USB 4 ports</p>
+
+                <!-- Button part start -->
+                <div class="mt-8">
+                    <h3 class="font-bold text-xl mb-4">Memory</h3>
+                    <button type="button" id="btn-memory-0" class="border-2 border-black rounded px-2
+                    py-1 mb-2">
+                        8GB unified memory
+                    </button>
+                    <button type="button" id="btn-memory-180" class="border-2 border-black rounded px-2
+                    py-1 mb-2">
+                        16GB unified memory
+                    </button>
+                </div>
+                <div class="mt-8">
+                    <h3 class="font-bold text-xl mb-4">Storage</h3>
+                    <button type="button" id="btn-storage-0" class="border-2 border-black rounded px-2
+                    py-1 mb-2">
+                        256GB SSD storage
+                    </button>
+                    <button type="button" id="btn-storage-100" class="border-2 border-black rounded px-2
+                    py-1 mb-2">
+                        512GB SSD storage
+                    </button>
+                    <button type="button" id="btn-storage-180" class="border-2 border-black rounded px-2
+                    py-1 mb-2">
+                        1TB SSD storage
+                    </button>
+                </div>
+                <div class="my-8">
+                    <h3 class="font-bold text-xl mb-4">Choose your delivery option</h3>
+                    <button type="button" id="btn-delivery-0" class="border-2 border-black rounded px-2
+                    py-1 mb-2">
+                        Friday, Aug 25 free prime delivery
+                    </button>
+                    <button type="button" id="btn-delivery-20" class="border-2 border-black rounded px-2
+                    py-1 mb-2">
+                        Friday, Aug 21 delivery charge $20
+                    </button>
+                </div>
+                <!-- Button part end -->
+
+                <!-- Shopping cart part start -->
+                <div class="my-8 sm:w-3/4 lg:w-2/4">
+                    <div class="flex justify-between border-b pb-2">
+                        <h4>Best Price</h4>
+                        <h4>$<span id="base-price">1299</span></h4>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <h4>Extra Memory Cost</h4>
+                        <h4>$<span id="memory-price">0</span></h4>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <h4>Extra Storage Cost</h4>
+                        <h4>$<span id="storage-price">0</span></h4>
+                    </div>
+                    <div class="flex justify-between border-b-2 border-black pb-2">
+                        <h4>Delivery Charge</h4>
+                        <h4>$<span id="delivery-price">0</span></h4>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <h4>Total Price</h4>
+                        <h4>$<span id="total-price">1299</span></h4>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <input type="text" id="coupon-input" class="border border-gray-300 rounded px-2
+                        py-1 mb-2">
+                        <button type="button" id="coupon-apply" class="border-2 border-transparent
+                        rounded px-2 py-1 mb-2 bg-red-600 text-white">
+                            Apply
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Shopping cart part end -->
+            </section>
+        </main>
+        <hr class="w-10/12 mx-auto border border-gray-300 mb-4 sm:w-3/4">
+        <h1 class="text-center font-bold text-5xl mb-8 text-gray-600">
+            Total: $<span id="discount-price">1299</span>
+        </h1>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.selected,
+button:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
